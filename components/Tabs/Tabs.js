@@ -13,9 +13,9 @@ class TabLink {
     if(`${this.tabData}` === "all") {
       // If `all` is true, select all cards regardless of their data attribute values
      this.cards = document.querySelectorAll('.card');
-    }
+    
       
-    } else {
+  } else {
       // else if `all` is false, only select the cards with matching this.tabData values
        this.cards = document.querySelectorAll(`.card[data-tab='${this.tabData}']`);
     }
@@ -71,6 +71,7 @@ class TabCard {
 - In your .forEach() method's callback function, return a new instance of TabLink and pass in each tab as a parameter
 
 */
-let tabs = document.querySelectorAll();
+
+let tabs = document.querySelectorAll('.tab');
 
 tabs.forEach((tab) => new TabLink(tab));
