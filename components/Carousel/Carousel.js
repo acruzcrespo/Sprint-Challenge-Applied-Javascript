@@ -13,8 +13,8 @@ class Carousel {
 
     }
     toggleLeft() {
-
     
+    }
 }
 
 let carousel = document.querySelectorAll('.carousel');
