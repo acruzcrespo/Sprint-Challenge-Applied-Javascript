@@ -1,7 +1,7 @@
 class Carousel {
     constructor(carousel) {
         this.carousel = carousel;
-        this.imgs = this.carousel.querySelectorAll('img');
+        this.img = this.carousel.querySelectorAll('img');
         this.rightBtn = document.querySelector('.right-button');
         this.leftBtn = document.querySelector('.left-button');
         this.index = 0;
@@ -14,10 +14,10 @@ class Carousel {
     }
     toggleLeft() {
 
-    }
+    
 }
 
-const carousel = document.querySelectorAll('.carousel');
+let carousel = document.querySelectorAll('.carousel');
 
 carousel.forEach((carousel) => new Carousel(carousel));
 
